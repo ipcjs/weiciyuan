@@ -3,59 +3,61 @@
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:orientation="horizontal"
-            android:columnCount="2"
-            android:alignmentMode="alignBounds"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:alignmentMode="alignBounds"
+            android:columnCount="2"
             android:columnOrderPreserved="false"
+            android:orientation="horizontal"
             android:useDefaultMargins="true">
 
 
     <TextView
-        android:gravity="right"
-        android:layout_gravity="right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
         android:text="@string/app_key"/>
 
     <Spinner
-        android:layout_marginLeft="5dp"
+        android:id="@+id/spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner"/>
+        android:layout_marginLeft="5dp"/>
 
 
     <TextView
-        android:gravity="right"
-
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
+        android:gravity="right"
         android:text="@string/login_email"/>
 
     <EditText
-        android:layout_marginLeft="5dp"
+        android:id="@+id/username"
         android:layout_width="wrap_content"
-        android:ems="10"
         android:layout_height="wrap_content"
-        android:id="@+id/username"/>
+        android:layout_marginLeft="5dp"
+        android:ems="10"
+        android:singleLine="true"/>
 
 
     <TextView
-        android:gravity="right"
-
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
-        android:text="@string/login_password"
-        android:layout_gravity="right"/>
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:text="@string/login_password"/>
 
     <EditText
-        android:layout_marginLeft="5dp"
+        android:id="@+id/password"
         android:layout_width="wrap_content"
-        android:ems="10"
         android:layout_height="wrap_content"
-        android:id="@+id/password"/>
-
-
+        android:layout_marginLeft="5dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:text="123"/>
 </GridLayout>

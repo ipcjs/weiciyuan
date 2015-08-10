@@ -1,12 +1,12 @@
 package org.qii.weiciyuan.support.settinghelper;
 
+import android.content.Context;
+
 import org.qii.weiciyuan.R;
 import org.qii.weiciyuan.support.utils.AppConfig;
 import org.qii.weiciyuan.support.utils.GlobalContext;
 import org.qii.weiciyuan.support.utils.Utility;
 import org.qii.weiciyuan.ui.preference.SettingActivity;
-
-import android.content.Context;
 
 /**
  * User: qii
@@ -306,7 +306,7 @@ public class SettingUtility {
     }
 
     public static boolean isBlackMagicEnabled() {
-        return SettingHelper.getSharedPreferences(getContext(), BLACK_MAGIC, false);
+        return SettingHelper.getSharedPreferences(getContext(), BLACK_MAGIC, true);
     }
 
     public static void setBlackMagicEnabled() {
