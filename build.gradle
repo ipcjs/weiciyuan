@@ -27,7 +27,7 @@ android {
     }
 
     buildToolsVersion "21.1.0"
-    compileSdkVersion 21
+    compileSdkVersion 23
 
     defaultConfig {
         applicationId "org.qii.weiciyuan"
